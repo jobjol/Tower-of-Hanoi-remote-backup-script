@@ -38,8 +38,8 @@ echo $(date)
 echo "Backing up locations: $server:$files to $dest/$file_archive"
 echo
 
-# Backup files. Full backup. No compression
-# rsync -az --update --delete $user@$server:$files $dest/$file_archive --exclude $exclude 
+# Backup files. Full backup. With compression
+rsync -az --update --delete $user@$server:$files $dest/$file_archive --exclude $exclude 
 
 # Print end status message.
 echo "Backup $dest/$file_archive complete"
