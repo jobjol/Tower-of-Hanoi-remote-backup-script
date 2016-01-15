@@ -13,13 +13,14 @@ This script will archive specified files and folders on the remote host.
 If run as a daily cron job, archives are rotated on a Tower of Hanoi schedule.
 Archives from 1, 2, 4, 8, 16... $max days ago are retained depending on the setting.
 
-##prerequisites
-copy your SSH key to the remote host, to allow access without a password.
+##Prerequisites
+Copy your SSH key to the remote host, to allow access without a password.
+Make sure the destination directory exists and the script has write permissions to it. 
 
-##settings
+##Settings
 user = username to login with at the remote server
 server = IP address remote server
-dest = local backup destination (make sure this directory exists and the script has write permissions to it. Don't append a slash)
+dest = local backup destination (Don't append a slash)
 files = remote backup directory (don't append a slash)
 exclude = Exclude pattern(s), see man rsync --exclude
 max = Oldest backup to keep (as a power of 2 in days)
