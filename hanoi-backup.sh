@@ -1,10 +1,10 @@
 #!/bin/bash
 ####################################
 #
-# Tower of Hanoi Backup script.
-# hanoi_backup v2.3.1 jeremdow@gmail.com
+# Tower of Hanoi remote backup script.
+# Fork of hanoi_backup v2.3.1 jeremdow@gmail.com
 #
-# This script will archive MySQL databases and specified files on the local host.
+# This script will archive directories of a remote server on the local host.
 # If run as a daily cron job, archives are rotated on a Tower of Hanoi schedule.
 # Archives from 1, 2, 4, 8, 16... $max days ago are retained depending on the setting.
 #
