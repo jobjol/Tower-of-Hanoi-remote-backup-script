@@ -1,7 +1,7 @@
 #!/bin/bash
 ####################################
 #
-# Tower of Hanoi remote backup script.
+# Tower of Hanoi remote server backup script v1.1
 # Fork of hanoi_backup v2.3.1 jeremdow@gmail.com
 #
 # This script will archive directories of a remote server on the local host.
@@ -13,14 +13,14 @@
 # Configuration Settings
 
 # Remote server access info.
-user="jj"
-server="37.187.92.174"
+user="remote-user"
+server="10.10.10.1"
 
-# Where to backup to.
-dest="/home/jj/backup"
+# Where to backup to. (dont append a slash)
+dest="/home/remote-user/backup"
 
 # Backup folder at remote server (dont append a slash)
-files="/home/jj"
+files="/home/remote-user"
 
 # Exclude pattern(s), see man rsync --exclude
 exclude="**sites/default/files**"
